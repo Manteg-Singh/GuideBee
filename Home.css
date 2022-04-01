@@ -1,0 +1,266 @@
+#body1{
+    clear: both;
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    background: url(Homepage.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1500px;
+}
+
+#left img{
+    padding-top: 23px;
+    margin-left: 24px;
+    width: 30px;
+    height: 30px;
+    filter: opacity(47%);
+}
+
+#hd{
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#say{
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    border: 0px solid black;
+    width: 500px;
+    margin-left: 21%;
+    margin-top: 5px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 7px;
+}
+#lthr1{
+    margin-top: 12px;
+    margin-left: 12px;
+    float: left;
+    border: 8px solid rgb(212, 212, 212);
+    width: 4%;
+    border-style: dotted none none;
+}
+
+#lthr2{
+    margin-top: 12px;
+    box-sizing: border-box;
+    margin-right: 12px;
+    float: right;
+    border: 8px solid rgb(212, 212, 212);
+    width: 4%;
+    border-style: dotted none none;
+}
+
+#container{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#dp{
+    float: left;
+    margin-left: -33px;
+    margin-top: 5px;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 15px 0px; 
+}
+.navbar{
+    margin-top: 48px;
+    margin-right: 175px;
+}
+.navbar li{
+    list-style: none;
+    float: left;
+    padding-left: 45px;
+}
+.navbar li a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color : black;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.navbar li a:hover{
+    color: rgb(184, 105, 105);
+}
+
+#title{
+    margin-top: -45px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    color: rgb(54, 33, 33)
+}
+
+#aboutus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 515px;
+    height: 184px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6%;
+    margin-top: 140px;
+    margin-left: 262px;
+    place-items: center;
+}
+
+#body2{
+    position:relative;
+ 
+}
+
+#heading2{
+    position: relative;
+    top: 290px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 25px;
+}
+#heading3{
+    position: relative;
+    top: 295px;
+    width: 537px;
+    height: 132px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 268px;
+}
+
+#services{
+    top: 300px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Transport img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.Transport img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.Transport a{
+    text-decoration: none;
+    padding-left: 160px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Transport a:hover{
+    font-weight: bold;
+    color: rgb(240, 89, 89);
+    font-family: cursive;
+}
+
+.Atm img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.Atm img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.Atm a{
+    text-decoration: none;
+    padding-left: 160px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Atm a:hover{
+    font-weight: bold;
+    color: rgb(240, 89, 89);
+    font-family: cursive;
+}
+.Hotels{
+    margin-top: 26px;
+}
+.Events{
+    margin-top: 26px;
+}
+.Hotels img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.Events img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+}
+
+.Hotels a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 107px;
+}
+.Hotels img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+.Hotels a:hover{
+    font-weight: bold;
+    color: rgb(240, 89, 89);
+    font-family: cursive;
+}
+
+.Events a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 170px;
+}
+
+.Events a:hover{
+    font-weight: bold;
+    color: rgb(240, 89, 89);
+    font-family: cursive;
+}
+
+.Events img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.heading4{
+    position: relative;
+}
+
+
+
+
+
