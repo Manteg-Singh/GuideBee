@@ -43,44 +43,7 @@
             text-align: center;
         }
 
-    </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        // var req = new Request(url);
-        // const obj = JSON.parse(req);
-        // console.log(obj);
 
-        function httpGet(theUrl) {
-            let xmlHttpReq = new XMLHttpRequest();
-            xmlHttpReq.open("GET", theUrl, false);
-            xmlHttpReq.send(null);
-            return xmlHttpReq.responseText;
-        }
-        var url = 'https://newsapi.org/v2/everything?' +
-            'q=Chandigarh&' +
-            'from=2022-03-28&' +
-            'apikey=8908f24ceedc4a7eb26c5e5bbe727d67';
-
-        const obj = JSON.parse(httpGet(url));
-        console.log(obj);
-        var icon1 = obj.articles[0].urlToImage;
-        var icon2 = obj.articles[1].urlToImage;
-        var icon3 = obj.articles[2].urlToImage;
-
-        var content1 = obj.articles[0].content;
-        var content2 = obj.articles[1].content;
-        var content3 = obj.articles[2].content;
-
-        document.getElementById("outer1").src = icon1;
-        document.getElementById("outer2").src = icon2;
-        document.getElementById("outer3").src = icon3;
-
-        document.getElementById("inn1").innerHTML = content1;
-        document.getElementById("inn2").innerHTML = content2;
-        document.getElementById("inn3").innerHTML = content3;
-
-    </script>
     
 </head>
 <body>
@@ -118,6 +81,41 @@
             <a href="contactus.html" style="text-decoration: none;color:rgb(226, 226, 226)"> Developer Info <br> </a>
         
     </footer>
+    <script>
+        // var req = new Request(url);
+        // const obj = JSON.parse(req);
+        // console.log(obj);
+
+        function httpGet(theUrl) {
+            let xmlHttpReq = new XMLHttpRequest();
+            xmlHttpReq.open("GET", theUrl, false);
+            xmlHttpReq.send(null);
+            return xmlHttpReq.responseText;
+        }
+        var url = 'https://newsapi.org/v2/everything?' +
+            'q=Chandigarh&' +
+            'from=2022-03-28&' +
+            'apikey=8908f24ceedc4a7eb26c5e5bbe727d67';
+
+        const obj = JSON.parse(httpGet(url));
+        console.log(obj);
+        var icon1 = obj.articles[0].urlToImage;
+        var icon2 = obj.articles[1].urlToImage;
+        var icon3 = obj.articles[2].urlToImage;
+
+        var content1 = obj.articles[0].content;
+        var content2 = obj.articles[1].content;
+        var content3 = obj.articles[2].content;
+
+        document.getElementById("outer1").src = icon1;
+        document.getElementById("outer2").src = icon2;
+        document.getElementById("outer3").src = icon3;
+
+        document.getElementById("inn1").innerHTML = content1;
+        document.getElementById("inn2").innerHTML = content2;
+        document.getElementById("inn3").innerHTML = content3;
+
+    </script>
 
 </body>
 </html>
