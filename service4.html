@@ -44,6 +44,44 @@
         }
 
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // var req = new Request(url);
+        // const obj = JSON.parse(req);
+        // console.log(obj);
+
+        function httpGet(theUrl) {
+            let xmlHttpReq = new XMLHttpRequest();
+            xmlHttpReq.open("GET", theUrl, false);
+            xmlHttpReq.send(null);
+            return xmlHttpReq.responseText;
+        }
+        var url = 'https://newsapi.org/v2/everything?' +
+            'q=Chandigarh&' +
+            'from=2022-03-28&' +
+            'apikey=8908f24ceedc4a7eb26c5e5bbe727d67';
+
+        const obj = JSON.parse(httpGet(url));
+        console.log(obj);
+        var icon1 = obj.articles[0].urlToImage;
+        var icon2 = obj.articles[1].urlToImage;
+        var icon3 = obj.articles[2].urlToImage;
+
+        var content1 = obj.articles[0].content;
+        var content2 = obj.articles[1].content;
+        var content3 = obj.articles[2].content;
+
+        document.getElementById("outer1").src = icon1;
+        document.getElementById("outer2").src = icon2;
+        document.getElementById("outer3").src = icon3;
+
+        document.getElementById("inn1").innerHTML = content1;
+        document.getElementById("inn2").innerHTML = content2;
+        document.getElementById("inn3").innerHTML = content3;
+
+    </script>
+    
 </head>
 <body>
     <div id="heading">
@@ -59,6 +97,19 @@
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54873.67742755616!2d76.76681952030395!3d30.729507622560355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stourist%20attractions%20in%20chandigarh!5e0!3m2!1sen!2sin!4v1648822108245!5m2!1sen!2sin"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>|</p>
+    </div>
+        <div class="news-container">
+        <img id="outer1" width="512px" height="256px" alt="" class="icon">
+        <p class="inn1"></p>
+
+
+        <img src="" alt="" id="outer2" class="icon">
+        <p class="inn2"></p>
+
+
+        <img src="" alt="" id="outer3" class="icon">
+        <p class="inn3"></p>
+
     </div>
     <footer class="foot">
         
