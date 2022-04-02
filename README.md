@@ -9,7 +9,7 @@ made with 💙 by :
 - Manteg Singh  
 
 steps to use 
-1. open [preview github html](https://github.com/Manteg-Singh/Rebooting-Rebels_Hackdroit/blob/main/Home.html)  
+1. open [preview github html](https://htmlpreview.github.io/)  
 2. Paste the following link https://github.com/Manteg-Singh/Rebooting-Rebels_Hackdroit/blob/main/Home.html
 3. you will see the following page  
       
