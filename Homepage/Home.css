@@ -1,0 +1,502 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar::before{
+    content: "";
+    background: url(index.jpg) no-repeat center center/cover;
+    background-position-y: 0.1rem;
+    position: absolute;
+    height: 65rem;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity:0.75;
+}
+#section-1{
+    height: 70rem;
+}
+
+@keyframes inf {
+    0%{ box-shadow: 0 0 0 0 rgba(253, 90, 191, 0.999) }
+    70%{ box-shadow:  0 0 1rem 3rem rgba(253, 87, 191, 0) }
+    100%{ box-shadow: 0 0 0 0 rgba(253, 87, 191, 0) }
+}
+
+#hd{
+    background: rgba(0, 0, 0, 0.25);
+    padding-top: 1rem;
+    padding-bottom: 1.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#say{
+    border: 0px solid black;
+    height: 35px;
+    padding-top: 0.35rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#lthr1{
+    margin-left: 1rem;
+    border: 0.7rem solid rgb(243, 207, 207);
+    width: 4%;
+    border-style: dotted none none;
+}
+
+#lthr2{
+    margin-right: 1rem;
+    border: 0.7rem solid rgb(243, 207, 207);
+    width: 4%;
+    border-style: dotted none none;
+}
+#container{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+#left{
+    height: 5.4rem;
+    width: 5.3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left i{
+    color: rgb(244, 196, 196);
+    font-size: 2.2rem;
+    animation-name: pusle;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+#dp{
+    margin-left: 5rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(245, 202, 202);
+    position: absolute;
+    animation-name: pusle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+@keyframes pusle{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.navbar{
+    margin-top: 2.5rem;
+    margin-right: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar li{
+    list-style: none;
+    padding-left: 45px;
+}
+.navbar li a{
+    font-size: 1.30rem;
+    font-weight: 600;
+    text-decoration: none;
+    color : rgb(254, 218, 218);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.navbar li a:hover{
+    color: rgb(255, 178, 178);
+}
+
+@media only screen and (min-width:1000px) and (max-width:1128px){
+    .navbar{
+        margin-top: 6rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .navbar{
+        top: 2rem;
+        margin-left: 0.6rem;
+        margin-right: 1.5rem;
+        justify-content: center;
+        width: 80rem;
+    }
+}
+
+.see{
+    position: absolute;
+    content: "";
+    height: 35rem;
+    left: 5rem;
+    right: 5rem;
+    bottom: 0rem;
+    top: 20rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.4s linear;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(234, 229, 220);
+    border-style: none solid none none;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: lrt 1.2s linear 1;
+}
+
+.see:hover{
+    transform: scale(1.02);
+    overflow: hidden;
+}
+
+@keyframes lrt {
+    0%{
+        transform: translateX(12rem);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+#welcome{
+    position: relative;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#wel{
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#ohsafe{
+    flex-basis: 100%;
+    margin-top: -3rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+#ohsafe span{
+    font-size: 3rem;
+}
+
+#video{
+    height: 30rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    grid-template-rows: 2fr 1fr ;
+    animation: threed 1.5s linear 1;
+    align-content: space-around;
+}
+
+@keyframes threed {
+    0%{
+        transform: scale3d(0,0,0);
+    }
+    100%{
+        transform: scale3d(1.01,1.01,1.01);
+    }
+}
+
+#space{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.19);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+#space span{
+    flex-basis: 50%;
+}
+
+#sb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sb input{
+    padding:0.5rem 1.5rem;
+    font-family: cursive;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#rt{
+    background-color :rgb(241, 234, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    border: 2px solid black;
+    margin-left: 0.5rem;
+}
+
+#rt:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#sb span{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: large;
+    color: black;
+}
+
+#section2{
+    margin-top: 3rem;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(58, 133, 168, 0.3)), url(section-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 43.5rem;
+    clip-path: polygon(100% 0%, 100% 75% , 50% 100% , 0% 75%, 0 0);
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#aboutus{
+    margin-left: 3rem;
+    top: 2.4rem;
+    /*left=8rem*/
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 45.5rem;
+    height: 31rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: pulse 2s linear infinite;
+    line-height: 3.5rem;
+    padding-left: 1rem;
+}
+
+#aboutus:hover{
+    transform: scale(1.02);
+}
+
+#sum{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#secth1{
+    top: 12rem;
+    position: relative;
+    border: 2px solid black;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem 1.5rem rgb(118, 103, 103);
+    transition: all 1s linear;
+    background-color: rgb(231, 129, 149);
+    color: white;
+}
+
+#secth1:hover{
+    transform: scale3d(1.1, 1.1 , 1.1) rotate(360deg);
+    text-shadow: 0 0 1rem 2rem white;
+}
+
+#secth1 span{
+    font-size: 3.5rem;
+}
+
+#section-3{
+    position:relative;
+    margin-top: 6rem;
+    height: 64rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    background-color: rgb(237, 233, 233);
+}
+
+@media only screen and (max-width:1343px){
+    #section-3{
+        height: 98rem;
+    }
+}
+
+#heading2{
+    position: relative;
+    top: 3rem;
+    left: 0.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 3rem;
+}
+#heading3{
+    position: relative;
+    top: 5rem;
+    left: 0.2rem;
+    width: 40rem;
+    height: 6rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+}
+
+#services{
+    top: 8rem;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.same{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 42rem;
+    height: 18rem;
+}
+
+.same img{
+    width: 16rem;
+    height: 12rem;
+    border-radius: 3px;
+}
+
+.same img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.same a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.same a:hover{
+    font-weight: bold;
+    color: rgb(240, 89, 89);
+    font-family: cursive;
+}
+
+#section-4{
+    display: flex;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+@keyframes pulse {
+    0%{ box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.999) }
+    70%{ box-shadow:  0 0 0 2rem rgba(253, 87, 191, 0) }
+    100%{ box-shadow: 0 0 0 0 rgba(253, 87, 191, 0) }
+}
+.up span {
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+    color: #eee;
+}
+
+.fas{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-style: solid solid none none;
+    border-width: 0.22rem;
+    border-color: black;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: all 0.5s linear;
+}
+
+.fas:hover{
+    transform: rotate(135deg);
+}
+
+
+
