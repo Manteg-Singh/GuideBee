@@ -21,3 +21,6 @@ steps to use
 
 
 
+![2022-04-19](https://user-images.githubusercontent.com/78022273/163987465-7c3ff27c-6372-4a19-8e75-e9a9e42312c0.png)
+![2022-04-19 (1)](https://user-images.githubusercontent.com/78022273/163987486-3473993e-fb6c-4a47-8ec7-e53387ae7481.png)
+![2022-04-19 (2)](https://user-images.githubusercontent.com/78022273/163987502-03a3f6e6-9137-43f8-89db-262f894ef526.png)
