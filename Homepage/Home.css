@@ -5,6 +5,23 @@
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+    width: 1.75vh;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(119, 110, 110);
+    border-radius: 2.4rem;
+    margin-right: 2rem;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(158, 156, 156);
+}
+
+html::-webkit-scrollbar-track{
+    background-color:#f9f9f9!important
+}
+
 .navbar::before{
     content: "";
     background: url(index.jpg) no-repeat center center/cover;
