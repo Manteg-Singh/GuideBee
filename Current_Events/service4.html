@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Events & Activities</title>
+    <style>
+        html::-webkit-scrollbar {
+            width: 1.75vh;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background-color: rgb(119, 110, 110);
+            border-radius: 2.4rem;
+            margin-right: 2rem;
+        }
+
+        html::-webkit-scrollbar-thumb:hover {
+            background-color: rgb(158, 156, 156);
+        }
+
+        html::-webkit-scrollbar-track {
+            background-color: #f9f9f9 !important
+        }
+
+        #heading {
+            background-color: black;
+            color: rgb(228, 227, 227);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 208px;
+            width: 65%;
+            font-size: x-large;
+        }
+
+        .description {
+            padding: 10px;
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        body {
+            background-image: url(Events.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .foot {
+
+            background-color: rgb(16, 16, 59);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: small;
+            padding: 10px;
+            bottom: 0px;
+            width: 97.5%;
+            text-decoration: none;
+        }
+
+        * {
+
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Local Events & Activities</h1>
+    </div>
+
+    <div class="description">
+        <p>Checkout various events happening around you! </p>
+    </div>
+
+    <div class="putmap" style="color: black; font-weight: bold;">
+        <p align="center"> <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d54873.67742755616!2d76.76681952030395!3d30.729507622560355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stourist%20attractions%20in%20chandigarh!5e0!3m2!1sen!2sin!4v1648822108245!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>|</p>
+    </div>
+    <div class="news-container">
+        <img id="outer1" width="512px" height="256px" alt="This article has no image" class="icon">
+        <p id="inn1" style="color:white"></p>
+
+
+        <img width="512px" height="256px" alt="This article has no image" id="outer2" class="icon">
+        <p id="inn2" style="color:white"></p>
+
+
+        <img width="512px" height="256px" alt="This article has no image" id="outer3" class="icon">
+        <p id="inn3" style="color:white"></p>
+
+    </div>
+    <footer class="foot">
+
+        <a href="/Homepage/Home.html" style="text-decoration: none; color:rgb(226, 226, 226) ;"> Home <br> </a>
+        <a href="" style="text-decoration: none;color:rgb(226, 226, 226)"> About Us <br> </a>
+        <a href="/contactus.html" style="text-decoration: none;color:rgb(226, 226, 226)"> Developer Info <br> </a>
+
+    </footer>
+    <script>
+        // var req = new Request(url);
+        // const obj = JSON.parse(req);
+        // console.log(obj);
+
+        function httpGet(theUrl) {
+            let xmlHttpReq = new XMLHttpRequest();
+            xmlHttpReq.open("GET", theUrl, false);
+            xmlHttpReq.send(null);
+            return xmlHttpReq.responseText;
+        }
+        var url = 'https://newsapi.org/v2/everything?' +
+            'q=Chandigarh&' +
+            'from=2022-03-28&' +
+            'apikey=8908f24ceedc4a7eb26c5e5bbe727d67';
+
+        const obj = JSON.parse(httpGet(url));
+        console.log(obj);
+        var icon1 = obj.articles[0].urlToImage;
+        var icon2 = obj.articles[1].urlToImage;
+        var icon3 = obj.articles[2].urlToImage;
+
+        var content1 = obj.articles[0].content;
+        var content2 = obj.articles[1].content;
+        var content3 = obj.articles[2].content;
+
+        document.getElementById("outer1").src = icon1;
+        document.getElementById("outer2").src = icon2;
+        document.getElementById("outer3").src = icon3;
+
+        document.getElementById("inn1").innerHTML = content1;
+        document.getElementById("inn2").innerHTML = content2;
+        document.getElementById("inn3").innerHTML = content3;
+
+    </script>
+
+</body>
+
+</html>
