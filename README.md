@@ -21,7 +21,22 @@ Steps to use our website efficently
 
    ![2022-04-19 (1)](https://user-images.githubusercontent.com/78022273/163987486-3473993e-fb6c-4a47-8ec7-e53387ae7481.png)
    
-6.Scroll down and navigate to the Services You desire
+6. Scroll down and navigate to the Services You desire
 
 
    ![2022-04-19 (2)](https://user-images.githubusercontent.com/78022273/163987502-03a3f6e6-9137-43f8-89db-262f894ef526.png)
+
+7. We'd love to hear what you think of GuideBee :)
+
+
+   <img width="960" alt="contact us" src="https://user-images.githubusercontent.com/75999878/177797325-45a97125-b6b8-49ec-910d-02d638f2f4e6.png">
+
+   
+   
+   Just received your input 🙌
+   
+   <img width="958" alt="input" src="https://user-images.githubusercontent.com/75999878/177796184-6feffeaf-15dd-4130-9843-3b8ab27067b6.png">
+
+
+
+   
